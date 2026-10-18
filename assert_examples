@@ -1,0 +1,44 @@
+# List of grades
+grades = [15, 12, 17, 10]
+
+
+def add_grade():
+    # Ask the user to enter a grade
+    grade = int(input("Enter a grade: "))
+    return grade
+
+
+def display_grades(grades):
+    # Display all grades
+    print(grades)
+
+
+def calculate_average(grades):
+    # Calculate the sum of all grades
+    total = sum(grades)
+
+    # Divide the sum by the number of grades
+    average = total / len(grades)
+
+    # Return the average
+    return average
+
+
+def highest_grade(grades):
+    # Return the highest grade
+    return max(grades)
+
+
+def lowest_grade(grades):
+    # Return the lowest grade
+    return min(grades)
+
+
+# Test the average calculation
+assert calculate_average(grades) == 13.5
+
+# Test the highest grade
+assert highest_grade(grades) == 17
+
+# Test the lowest grade
+assert lowest_grade(grades) == 10
